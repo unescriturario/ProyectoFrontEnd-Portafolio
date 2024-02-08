@@ -80,7 +80,7 @@
             </div>
 
             <div class="main-imagen">
-                <img class="imagen-main" src="Images/ImagenProfile.jpeg" alt="">
+                <img id="imagen" class="imagen-main" src="Images/Foto1.jpg" alt="">
             </div>
 
         </main>
@@ -89,8 +89,9 @@
                 <h4 class="habilidades-textoh4-textointroductorio">FEATURES</h4>
                 <h1 class="habilidades-textoh1-textointroductorio"> What I Do</h1>
             </div>
-            <div class="habilidades-6cajas">
-                <div class="habilidades primeracajagrandehab">
+            <div class="contenedorGrandeSlider">
+                <div class="habilidadesSeisCajas">
+
                     <div class="habilidad primeracajahab">
                         <i class="fa-solid fa-bars fa-lg" style="color: #ff014f;"></i>
                         <h3 class="habilidad-descripcion primeracajahab">Business Stratagy</h3>
@@ -112,8 +113,8 @@
                             elit.
                             Fugit, dicta dolores deleniti quae reiciendis necessitatibus quo?</p>
                     </div>
-                </div>
-                <div class="habilidades segundacajagrandehab">
+
+
                     <div class="habilidad cuartacajahab">
                         <i class="fa-regular fa-comment-dots fa-lg" style="color: #ff014f;"></i>
                         <h3 class="habilidad-descripcion cuartacajahab">Mobile App</h3>
@@ -136,7 +137,10 @@
                             Fugit, dicta dolores deleniti quae reiciendis necessitatibus quo?</p>
                     </div>
                 </div>
+                <div class="anterior" id ="anterior" onclick ="divSlider(-1)"> <i class="fa-solid fa-arrow-right fa-2xl"></i></div>
+                <div class="siguiente" id ="siguiente" onclick ="divSlider(1)"><i class="fa-solid fa-arrow-left fa-2xl"></i></div>
             </div>
+
 
         </section>
         <section class="seccion-miportafolio">
@@ -153,6 +157,15 @@
                             <h4 class="miportafolio-calificacionh4 productounomiport">600</h4>
                         </div>
                         <h3 class="miportafolio-descripcionh3 productounomiport"> The services provide for design</h3>
+                        <button class="miportafolio-botonsabermas" id="cajaSaberMasUno">Saber mas</button>
+                        <div class="visible" id="cajaVisibleUno">
+                            <button class="gitHubRepo"><a href="https://github.com/unescriturario" target="_blank"><i
+                                        class="fa-brands fa-github fa-lg"></i></a></button>
+                            <button class="btnCerrar" id="btnCloseUno">Cerrar</button>
+                            <p class="textoCajaSuperpuesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
                     <div class="miportafolio productodosmiport">
                         <img class="miportafolio-imagen productodosmiport" src="Images/MiPortafolio-Caja2.jpg" alt="">
@@ -160,8 +173,17 @@
                             <h4 class="miportafolio-resumenh4 productodosmiport">APPLICATION</h4>
                             <h4 class="miportafolio-calificacionh4 productodosmiport">750</h4>
                         </div>
-                        <h3 class="miportafolio-descripcionh3 productodosmiport"> Mobile app landing design & app
+                        <h3 class="miportafolio-descripcionh3 productodosmiport"> Mobile app landing design
                             maintain</h3>
+                        <button class="miportafolio-botonsabermas" id="cajaSaberMasDos">Saber mas</button>
+                        <div class="visible" id="cajaVisibleDos">
+                            <button class="gitHubRepo"><a href="https://github.com/unescriturario" target="_blank"><i
+                                        class="fa-brands fa-github fa-lg"></i></a></button>
+                            <button class="btnCerrar" id="btnCloseDos">Cerrar</button>
+                            <p class="textoCajaSuperpuesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
                     <div class="miportafolio productotresmiport">
                         <img class="miportafolio-imagen productotresmiport" src="Images/MiPortafolio-Caja3.jpg" alt="">
@@ -171,6 +193,15 @@
                         </div>
                         <h3 class="miportafolio-descripcionh3 productotresmiport"> Logo design creativity & Application
                         </h3>
+                        <button class="miportafolio-botonsabermas" id="cajaSaberMasTres">Saber mas</button>
+                        <div class="visible" id="cajaVisibleTres">
+                            <button class="gitHubRepo"><a href="https://github.com/unescriturario" target="_blank"><i
+                                        class="fa-brands fa-github fa-lg"></i></a></button>
+                            <button class="btnCerrar" id="btnCloseTres">Cerrar</button>
+                            <p class="textoCajaSuperpuesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="miportafolio-segundacajagrandemiport">
@@ -181,9 +212,17 @@
                             <h4 class="miportafolio-resumenh4 productocuatromiport">FIGMA</h4>
                             <h4 class="miportafolio-calificacionh4 productocuatromiport">360</h4>
                         </div>
-                        <h3 class="miportafolio-descripcionh3 productocuatromiport"> Mobile app landing design &
-                            Services
+                        <h3 class="miportafolio-descripcionh3 productocuatromiport"> Mobile app landing design
                         </h3>
+                        <button class="miportafolio-botonsabermas" id="cajaSaberMasCuatro">Saber mas</button>
+                        <div class="visible" id="cajaVisibleCuatro">
+                            <button class="gitHubRepo"><a href="https://github.com/unescriturario" target="_blank"><i
+                                        class="fa-brands fa-github fa-lg"></i></a></button>
+                            <button class="btnCerrar" id="btnCloseCuatro">Cerrar</button>
+                            <p class="textoCajaSuperpuesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
                     <div class="miportafolio productocincomiport">
                         <img class="miportafolio-imagen productocincomiport" src="Images/MiPortafolio-Caja5.jpg" alt="">
@@ -193,6 +232,15 @@
                         </div>
                         <h3 class="miportafolio-descripcionh3 productocincomiport"> Design for technology & services
                         </h3>
+                        <button class="miportafolio-botonsabermas" id="cajaSaberMasCinco">Saber mas</button>
+                        <div class="visible" id="cajaVisibleCinco">
+                            <button class="gitHubRepo"><a href="https://github.com/unescriturario" target="_blank"><i
+                                        class="fa-brands fa-github fa-lg"></i></a></button>
+                            <button class="btnCerrar" id="btnCloseCinco">Cerrar</button>
+                            <p class="textoCajaSuperpuesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
                     <div class="miportafolio productoseismiport">
                         <img class="miportafolio-imagen productoseismiport" src="Images/MiPortafolio-Caja6.png" alt="">
@@ -201,7 +249,18 @@
                             <h4 class="miportafolio-calificacionh4 productoseismiport">690</h4>
                         </div>
                         <h3 class="miportafolio-descripcionh3 productoseismiport"> App for technology and services</h3>
+                        <button class="miportafolio-botonsabermas" id="cajaSaberMasSexto">Saber mas</button>
+                        <div class="visible" id="cajaVisibleSexto">
+                            <button class="gitHubRepo"><a href="https://github.com/unescriturario" target="_blank"><i
+                                        class="fa-brands fa-github fa-lg"></i></a></button>
+                            <button class="btnCerrar" id="btnCloseSexto">Cerrar</button>
+                            <p class="textoCajaSuperpuesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
         </section>
@@ -432,16 +491,16 @@
 
                 </div>
                 <div class="contacto-formulario">
-                    <form class="contacto-formularioform" action="">
+                    <form class="contacto-formularioform" action="" id="formularioLlenado">
                         <div class="contacto-formulario-namenumber">
                             <div class="formulario-name-caja">
                                 <label class="formulario-name" for="">YOUR NAME</label>
-                                <input class="formulario-name-tamaño" type="text">
+                                <input class="formulario-name-tamaño" type="text" id="nombre" required>
                             </div>
                             <div class="formulario-numero-caja">
 
                                 <label class="formulario-numero" for="">PHONE NUMBER</label>
-                                <input class="formulario-numero-tamaño" type="number">
+                                <input class="formulario-numero-tamaño" type="number" id="numero" required>
                             </div>
 
                         </div>
@@ -449,30 +508,33 @@
                         <div class="formulario-email-caja">
 
                             <label class="formulario-email" for="">EMAIL</label>
-                            <input class="formulario-email-tamaño" type="email">
+                            <input class="formulario-email-tamaño" type="email" id="email" required>
 
                         </div>
 
                         <div class="formulario-asunto-caja">
 
                             <label class="formulario-asunto" for="">SUBJECT</label>
-                            <input class="formulario-asunto-tamaño" type="text">
+                            <input class="formulario-asunto-tamaño" type="text" id="asunto" required>
 
                         </div>
 
                         <div class="formulario-mensaje-caja">
 
                             <label class="formulario-mensaje" for="">YOUR MESSAGE</label>
-                            <input class="formulario-mensaje-tamaño" type="text">
+                            <input class="formulario-mensaje-tamaño" type="text" id="mensaje" required>
 
                         </div>
 
                         <button class="contacto-botonenviar"> SEND MESSAGE</button>
+                        <div class="mensajeExito" id="formularioExitoso">Su mensaje ha sido enviado con exito</div>
+                        <div class="mensajeFallido" id="formularioFallido">Su mensaje NO ha sido enviado con exito</div>
                     </form>
                 </div>
             </div>
         </section>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
